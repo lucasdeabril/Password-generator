@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    color: white;
+}
+:root{
+    --cor-fundo : rgb(35, 35, 43);
+    --cor-verde : rgb(153, 254, 153);
+}
+body{
+    background-color: black;
+}
+
+#titulo{
+    /* background-color: var(--cor-fundo); */
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+#titulo p {
+    transform: translate(90px);
+    display: block;
+    margin: auto;
+}
+
+#password{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--cor-fundo);
+}
+#password img{
+    width: 20px;
+    float: right;
+    margin-top: 9px;
+    margin-right: 10px;
+    transform: translate(0px,-18px);
+}
+#senha{
+    transform: translate(10px,10px);
+
+}
+
+#controls{
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 340px;
+    
+    background-color: var(--cor-fundo);
+}
+#contaletra{
+    margin-left: 10px;
+    padding-top: 10px;
+    /* background-color: purple; */
+}
+#qtdl{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.checkbox{
+    margin-top: 7px;
+    margin-left: 10px;
+    background-color: red;
+    
+}
+.opcao{
+    display: inline;
+    margin-left: 10px;
+}
+#medidor{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#gerar{
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: var(--cor-verde);
+    padding-top: 10px;
+    height: 30px;
+    width: 250px;
+    
+}
+#gerar p {
+    margin-left: 86px;
+    color: var(--cor-verde);
+}

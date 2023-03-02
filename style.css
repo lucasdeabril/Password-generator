@@ -6,7 +6,7 @@
 }
 :root{
     --cor-fundo : rgb(35, 35, 43);
-    --cor-verde : rgb(153, 254, 153);
+    --cor-verde : rgb(72, 223, 72);
 }
 body{
     background-color: black;
@@ -63,6 +63,108 @@ body{
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px 30px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#qtdl{
+    width: 290px;
+    /* background-color: rebeccapurple; */
+}
+#qtdl input{
+    background-color: var(--cor-verde);
+    height: 5px;
+    width: 170px;
+    border-radius: 5px;
+    
+    appearance: none;
+    margin-bottom: 20px;
+}
+#qtdl input::-webkit-slider-thumb{
+    appearance: none;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: var(--cor-verde);
+    
+}
+#valor{
+    float: right;
+    transform: translateX(-40px) translateY(2px);
+    
+}
+#qtdl  input:hover::-webkit-slider-thumb{
+    appearance: none;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: rgb(63, 185, 63);
+}
+  
+/* Esconder o checkbox padrão */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Criar o checkbox customizado */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #fafafa;
+    border-radius: 2px;
+
+}
+  
+/* Adicionar uma cor de fundo cinza ao passar o mouse */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* Quando o checkbox é clicado, adicionar um fundo verde */
+.container input:checked ~ .checkmark {
+    background-color: var(--cor-verde);
+}
+  
+  /* Criar o ícone de check, escondido quando não estiver selecionado */
+.container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+  /* Exibir o ícone quando selecionado */
+.container input:checked ~ .checkmark:after {
+    display: block;
 }
 .checkbox{
     margin-top: 7px;

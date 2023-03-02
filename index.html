@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,12 +17,26 @@
     </div>
     <div id="controls">
         <div id="contaletra"><p>Character length</p></div>
-        <div id="qtdl">1 ao 20</div>
+        <div id="qtdl"> 
+            <input type="range" min="5" max="20" value="5" step="1" name="" id="range" > 
+            <span id="valor">5</span></div>
+        <label class="container">Include Uppercase Letters
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Include Lowercase Letters
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Include Numbers
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Include Symbols
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
         
-        <div><input type="checkbox" name="" class="checkbox" id=""><P class="opcao">Include Uppercase Letters</P></div>
-        <div><input type="checkbox" name="" class="checkbox" id=""><p class="opcao">Include Lowercase Letters</p></div>
-        <div><input type="checkbox" name="" class="checkbox" id=""><p class="opcao">Include Numbers</p></div>
-        <div><input type="checkbox" name="" class="checkbox" id=""><p class="opcao">Include Symbols</p></div>
         
         <div id="medidor"><div>STRENGTH</div><div id="força"></div></div>
 

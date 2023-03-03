@@ -101,6 +101,7 @@ body {
     
 }
 #valor{
+    color: var(--cor-verde);
     float: right;
     transform: translateX(-40px) translateY(2px);
     

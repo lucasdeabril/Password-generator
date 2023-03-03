@@ -11,7 +11,7 @@
     
     
     
-    <div id="titulo" onclick="oi()">
+    <div id="titulo">
         <p>Password Generator</p>
     </div>
     <div id="password">
@@ -28,19 +28,19 @@
             <span id="valor">5</span>
         </div>
         <label class="container">Include Uppercase Letters
-            <input type="checkbox" checked="checked">
+            <input type="checkbox" id="maiusculas" oninput="opcoes()">
             <span class="checkmark"></span>
           </label>
           <label class="container">Include Lowercase Letters
-            <input type="checkbox">
+            <input type="checkbox" id="minusculas" oninput="opcoes()">
             <span class="checkmark"></span>
           </label>
           <label class="container">Include Numbers
-            <input type="checkbox">
+            <input type="checkbox" id="numeros" oninput="opcoes()">
             <span class="checkmark"></span>
           </label>
           <label class="container">Include Symbols
-            <input type="checkbox">
+            <input type="checkbox" id="simbolos" oninput="opcoes()">
             <span class="checkmark"></span>
           </label>
         

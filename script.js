@@ -2,7 +2,7 @@ const slyder = document.getElementById('range')
 const letras = document.getElementById('valor')
 
 
-function letras (){
+function tamanhosenha (){
 
     let valor = slyder.value;
     letras.textContent = valor;

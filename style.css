@@ -90,6 +90,17 @@ body {
     appearance: none;
     margin-bottom: 20px;
 }
+ /* bolinha do slider */
+#qtdl input::-webkit-slider-thumb{
+    appearance: none;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: var(--cor-verde);
+    
+}
 #qtdl input::-webkit-slider-thumb{
     appearance: none;
     display: block;
@@ -113,7 +124,8 @@ body {
     height: 15px;
     border-radius: 100%;
     cursor: pointer;
-    background-color: rgb(63, 185, 63);
+    background-color: rgb(243, 243, 243);
+    border: 2px solid rgb(32, 189, 32);
 }
   
 /* Esconder o checkbox padrão */
@@ -195,4 +207,20 @@ body {
 #gerar p {
     margin-left: 86px;
     color: var(--cor-verde);
+}
+#forca{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+}
+#forca_img{
+    float: right;
+    transform: translate(-10px,-5px);
+    /* background-color: rebeccapurple;
+    width: 30px;
+    height: 30px; */
+}
+#paint{
+    width: 60px;
 }
